@@ -29,9 +29,9 @@ void tri_rapide (int arr[] , int deb , int fin ){
      }
    }
 //AP pour inserer un élément dans le tableau trié
-void insertElement(int arr[], int size, int element) {
+void insertElement(int arr[], int *size, int element) {
     if (size < MAX_SIZE) {
-        int i = size - 1;
+        int i = *size - 1;
 
         while (i >= 0 && arr[i] > element) {
             arr[i + 1] = arr[i];
@@ -39,7 +39,7 @@ void insertElement(int arr[], int size, int element) {
         }
 
         arr[i + 1] = element;
-        (size)++;
+        (*size)++;
     } else {
         printf("Le tableau est plein. Impossible d'ajouter un nouvel élément.\n");
     }
@@ -52,10 +52,10 @@ void deleteElement(int arr[],int *size,int element){
     for (i=0;i<*size;i++){
         if(arr[i]==element){
             //decalage vers la gauche
-            for (j=i;j<n-1;j++){
+            for (j=i;j<*size;j++){
                 arr[j]=arr[j+1];
             }
-            n--;//decrementer le taille
+            (size*)--;//decrementer le taille
         }
             break;
   }
