@@ -4,8 +4,20 @@
 //AP pour le tri rapide
 
 //AP pour inserer un élément dans le tableau trié
+void insertElement(int arr[], int n, int element) {
+    int i = n - 1;
+
+    while (i >= 0 && arr[i] > element) {
+        arr[i + 1] = arr[i];
+        i--;
+    }
+
+    arr[i + 1] = element;
+}
 
 //AP pour supprimer un élément dans le tableau trié
+
+//AP pour afficher les éléments du tableau
 
 
 //la partie main
