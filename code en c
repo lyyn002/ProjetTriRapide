@@ -30,7 +30,7 @@ void tri_rapide (int arr[] , int deb , int fin ){
    }
 //AP pour inserer un élément dans le tableau trié
 void insertElement(int arr[], int *size, int element) {
-    if (size < MAX_SIZE) {
+    if (*size < MAX_SIZE) {
         int i = *size - 1;
 
         while (i >= 0 && arr[i] > element) {
