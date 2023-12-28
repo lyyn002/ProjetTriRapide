@@ -92,8 +92,7 @@ do{
     }
 
     //Tri du tableau
-    int deb=0;
-    tri_rapide ( arr ,deb , n);
+    tri_rapide ( arr ,0 , n-1);
 
     //Affichage du tableau apres le tri
     printf("Tableau trié :\n");
