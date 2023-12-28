@@ -123,6 +123,7 @@ int valeur;
                 // ajouter la fonction et l'affichage
                  insertElement( arr,  n,  valeur);
               afficher_tab(arr,n);
+               break;
         case '2':
                 printf("Donnez l'élément à supprimer : ");
                 scanf("%d", &valeur);
