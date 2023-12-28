@@ -47,7 +47,7 @@ void insertElement(int arr[], int *size, int element) {
 
 //AP pour supprimer un élément dans le tableau trié
 void deleteElement(int arr[],int *size,int element){
-    int i;
+    int i,j;
     //recherche de l'élement à supprimer dans le tableau trié
     for (i=0;i<*size;i++){
         if(arr[i]==element){
