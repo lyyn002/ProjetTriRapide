@@ -55,17 +55,17 @@ void deleteElement(int arr[],int *size,int element){
             for (j=i;j<*size;j++){
                 arr[j]=arr[j+1];
             }
-            (size*)--;//decrementer le taille
+            (*size)--;//decrementer le taille
         }
             break;
   }
 }
 //AP pour afficher les éléments du tableau
-void afficher_tab(int arr[], int *size) {
+void afficher_tab(int arr[], int size) {
     int i;
     printf("les valeurs du tableau sont :\n");
 
-    for (i = 0; i < *size; i++) {
+    for (i = 0; i < size; i++) {
         printf("arr[%d]= %d\n", i+1, arr[i]);
     }
 }
