@@ -27,7 +27,7 @@ void tri_rapide (int arr[] , int deb , int fin ){
       arr[fin] = tmp;
       piv= i+1;
       tri_rapide(arr,deb,piv-1);
-      tri_rapide (arr,piv+1,fin);
+      tri_rapide (arr,piv+2,fin);
      }
    }
 //AP pour inserer un élément dans le tableau trié
