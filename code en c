@@ -6,13 +6,11 @@
 
 //AP pour le tri rapide
 void tri_rapide (int arr[] , int deb , int fin ){
-       if (deb<fin){
      int i, j;
      int pivot = arr[fin];
-     int piv;
      int tmp;
      i=deb-1;
-
+     if(deb<fin){
      for (j = deb ;j< fin ;j++ ){
          if (arr[j]<= pivot ){
              i++;
