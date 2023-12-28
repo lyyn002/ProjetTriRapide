@@ -47,18 +47,23 @@ void insertElement(int arr[], int *size, int element) {
 
 //AP pour supprimer un élément dans le tableau trié
 void deleteElement(int arr[],int *size,int element){
-    int i,j;
-    //recherche de l'élement à supprimer dans le tableau trié
-    for (i=0;i<*size;i++){
-        if(arr[i]==element){
-            //decalage vers la gauche
-            for (j=i;j<*size;j++){
-                arr[j]=arr[j+1];
-            }
-            (*size)--;//decrementer le taille
-        }
+    int i;
+
+    for (i = 0; i < *size; i++) {
+        if (arr[i] == element)
             break;
-  }
+    }
+
+    if (i < *size) {
+        for (int j = i; j < *size - 1; j++) {
+            arr[j] = arr[j + 1];
+        }
+        (*size)--;
+        printf("L'élément %d a été supprimé du tableau.\n", element);
+        printf("Tableau après la suppression de %d :\n", element);
+    } else {
+        printf("L'élément %d n'a pas été trouvé dans le tableau. Suppression impossible.\n", element);
+    }
 }
 //AP pour afficher les éléments du tableau
 void afficher_tab(int arr[], int size) {
