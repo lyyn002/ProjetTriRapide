@@ -121,7 +121,7 @@ int valeur;
                 printf("Donnez l'élément à insérer : ");
                 scanf("%d", &valeur);
                 // ajouter la fonction et l'affichage
-                 insertElement( arr,  size,  valeur);
+                 insertElement( arr,  n,  valeur);
                 break;
 
             case '2':
