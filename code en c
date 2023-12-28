@@ -138,7 +138,8 @@ int valeur;
                 printf("Option invalide. Veuillez choisir à nouveau.\n");
         }
     } while (choix != '0');
-
+ return 0;
+}
   
     
 
