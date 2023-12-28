@@ -13,7 +13,7 @@ void tri_rapide (int arr[] , int deb , int fin ){
      if(deb<fin){
      for (j = deb ;j< fin ;j++ ){
          if (arr[j]<= pivot ){
-             i++;
+            i= i+1;
              tmp= arr[i];
              arr[i]=arr[j];
              arr[j]=tmp;
