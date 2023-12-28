@@ -80,13 +80,11 @@ int main(){
 int arr[MAX_SIZE];
 int n;
 
+do{
     printf("Donnez la taille initiale de votre tableau : ");
     scanf("%d", &n);
+} while ((n<0)||(n>100));
 
-    if (n > MAX_SIZE) {
-        printf("La taille initiale dépasse la taille maximale autorisée. Réinitialisation à %d.\n", MAX_SIZE);
-        n = MAX_SIZE;
-    }
 
     // Remplir le tableau
     printf("Donnez les éléments du tableau trié :\n");
