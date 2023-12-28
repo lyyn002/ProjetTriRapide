@@ -5,7 +5,7 @@
 
 
 //AP pour le tri rapide
-void tri_rapide (int t[] , int deb , int fin ){
+void tri_rapide (int arr[] , int deb , int fin ){
        if (deb<fin){
      int i, j;
      int pivot = t[fin];
