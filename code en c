@@ -8,26 +8,26 @@
 void tri_rapide (int arr[] , int deb , int fin ){
        if (deb<fin){
      int i, j;
-     int pivot = t[fin];
+     int pivot = arr[fin];
      int piv;
      int tmp;
      i=deb-1;
 
      for (j = deb ;j< fin ;j++ ){
-         if (t[j]<= pivot ){
+         if (arr[j]<= pivot ){
              i++;
-             tmp= t[i];
-             t[i]=t[j];
-             t[j]=tmp;
+             tmp= arr[i];
+             arr[i]=arr[j];
+             arr[j]=tmp;
          }
      }
 
-      tmp = t[i+1];
-      t[i+1]= t[fin];
-      t[fin] = tmp;
+      tmp = arr[i+1];
+      arr[i+1]= arr[fin];
+      arr[fin] = tmp;
       piv= i+1;
-      tri_rapide(t,deb,piv-1);
-      tri_rapide (t,piv+1,fin);
+      tri_rapide(arr,deb,piv-1);
+      tri_rapide (arr,piv+1,fin);
      }
    }
 //AP pour inserer un élément dans le tableau trié
