@@ -1,6 +1,7 @@
 	//initialisation de la taille du tableau
     	int main(){
-		
+	void remplissage ()
+	{	
 		while((n<0)||n>100){
     		printf("veuillez entrez la taille du tableau");
     		scanf("%d",&n);
