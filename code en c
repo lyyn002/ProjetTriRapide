@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <stdbool.h>
+
+//AP pour le tri rapide
+
+//AP pour inserer un élément dans le tableau trié
+
+//AP pour supprimer un élément dans le tableau trié
+
+
+//la partie main
+
+int main(){
+
+
+return 0;
+}
