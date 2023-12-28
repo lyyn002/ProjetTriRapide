@@ -119,14 +119,14 @@ int valeur;
                 printf("Donnez l'élément à insérer : ");
                 scanf("%d", &valeur);
                 // ajouter la fonction et l'affichage
-                 insertElement( arr,  n,  valeur);
+                 insertElement( arr,  &n,  valeur);
               afficher_tab(arr,n);
                break;
         case '2':
                 printf("Donnez l'élément à supprimer : ");
                 scanf("%d", &valeur);
                 // ajouter la fonction et l'affichage
-                deleteElement(arr,n,valeur);
+                deleteElement(arr,&n,valeur);
                 afficher_tab(arr,n);
                 break;
 
