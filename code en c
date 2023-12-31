@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdbool.h>
-
+#include <raylib.h>
 #define MAX_SIZE 100
 
 
@@ -23,7 +23,24 @@ void tri_rapide (int arr[] , int deb , int fin ){
       tmp = arr[i+1];
       arr[i+1]= arr[fin];
       arr[fin] = tmp;
-      
+      const int screenWidth = 800;
+    const int screenHeight = 450;
+    InitWindow(screenWidth, screenHeight, "Tri rapide avec raylib");
+
+    SetTargetFPS(60);
+    while (!WindowShouldClose()) {
+
+
+        BeginDrawing();
+        ClearBackground(RAYWHITE);
+        DrawText("Tri rapide avec raylib", 10, 10, 20, BLACK);
+        drawArray(arr, fin, 100, 150, 120, 100, RED);
+
+        EndDrawing();
+
+    }
+
+    CloseWindow();
       tri_rapide(arr,deb,i);
       tri_rapide (arr,i+2,fin);
      }
@@ -65,15 +82,20 @@ void deleteElement(int arr[],int *size,int element){
         printf("L'élément %d n'a pas été trouvé dans le tableau. Suppression impossible.\n", element);
     }
 }
-//AP pour afficher les éléments du tableau
-void afficher_tab(int arr[], int size) {
-    int i;
-    printf("les valeurs du tableau sont :\n");
+//dessin raylib 
+void drawArray(int arr[], int size, int x, int y, int width, int height, Color color) {
+    int barWidth = width / size;
+    int barHeight = height / size;
 
-    for (i = 0; i < size; i++) {
-        printf("arr[%d]= %d\n", i+1, arr[i]);
+    for (int i = 0; i < size; i++) {
+        int barX = x + i * barWidth;
+        int barY = y + height - arr[i] * barHeight;
+        int barW = barWidth - 2;
+        int barH = arr[i] * barHeight;
+        DrawRectangle(barX, barY, barW, barH, color);
     }
 }
+
 
 
 //la partie main
@@ -96,13 +118,42 @@ do{
         scanf("%d", &arr[i]);
     }
 
+const int screenWidth = 800;
+    const int screenHeight = 450;
+    InitWindow(screenWidth, screenHeight, "Tri rapide avec raylib");
+
+    SetTargetFPS(60);
+    while (!WindowShouldClose()) {
+
+        BeginDrawing();
+        ClearBackground(RAYWHITE);
+        DrawText("Tri rapide avec raylib", 10, 10, 20, BLACK);
+        drawArray(arr, n, 100, 150, 120, 100, RED);
+
+        EndDrawing();
+
+    }
+
     //Tri du tableau
     tri_rapide ( arr ,0 , n-1);
 
-    //Affichage du tableau apres le tri
-    printf("Tableau trié :\n");
-    afficher_tab(arr, n);
+ InitWindow(screenWidth, screenHeight, "Tri rapide avec raylib");
 
+    SetTargetFPS(60);
+    while (!WindowShouldClose()) {
+
+        BeginDrawing();
+        ClearBackground(RAYWHITE);
+        DrawText("Tri rapide avec raylib", 10, 10, 20, BLACK);
+        drawArray(arr, n, 100, 150, 120, 100, RED);
+
+        EndDrawing();
+
+    }
+
+    CloseWindow();
+
+  
    //menu des choix
 char choix;
 int valeur;
@@ -120,14 +171,75 @@ int valeur;
             case '1':
                 printf("Donnez l'élément à insérer : ");
                 scanf("%d", &valeur);
+                 InitWindow(screenWidth, screenHeight, "Tri rapide avec raylib");
+
+    SetTargetFPS(60);
+    while (!WindowShouldClose()) {
+
+        BeginDrawing();
+        ClearBackground(RAYWHITE);
+        DrawText("Tri rapide avec raylib", 10, 10, 20, BLACK);
+        drawArray(arr, n, 100, 150, 120, 100, RED);
+
+        EndDrawing();
+
+    }
+
+    CloseWindow();
+
                  insertElement( arr,  &n,  valeur);
-              afficher_tab(arr,n);
+
+               InitWindow(screenWidth, screenHeight, "Tri rapide avec raylib");
+
+    SetTargetFPS(60);
+    while (!WindowShouldClose()) {
+
+        BeginDrawing();
+        ClearBackground(RAYWHITE);
+        DrawText("Tri rapide avec raylib", 10, 10, 20, BLACK);
+        drawArray(arr, n, 100, 150, 120, 100, RED);
+
+        EndDrawing();
+
+    }
+
+    CloseWindow();
                break;
         case '2':
                 printf("Donnez l'élément à supprimer : ");
                 scanf("%d", &valeur);
+
+               InitWindow(screenWidth, screenHeight, "Tri rapide avec raylib");
+
+    SetTargetFPS(60);
+    while (!WindowShouldClose()) {
+
+        BeginDrawing();
+        ClearBackground(RAYWHITE);
+        DrawText("Tri rapide avec raylib", 10, 10, 20, BLACK);
+        drawArray(arr, n, 100, 150, 120, 100, RED);
+
+        EndDrawing();
+
+    }
+
+    CloseWindow();
                 deleteElement(arr,&n,valeur);
-                afficher_tab(arr,n);
+              InitWindow(screenWidth, screenHeight, "Tri rapide avec raylib");
+
+    SetTargetFPS(60);
+    while (!WindowShouldClose()) {
+
+        BeginDrawing();
+        ClearBackground(RAYWHITE);
+        DrawText("Tri rapide avec raylib", 10, 10, 20, BLACK);
+        drawArray(arr, n, 100, 150, 120, 100, RED);
+
+        EndDrawing();
+
+    }
+
+    CloseWindow();
                 break;
 
             case '0':
