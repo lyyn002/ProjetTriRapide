@@ -151,7 +151,7 @@ const int screenWidth = 800;
 
         BeginDrawing();
         ClearBackground(RAYWHITE);
-        DrawText("Tri rapide avec raylib", 10, 10, 20, BLACK);
+        DrawText("Tri rapide:", 10, 10, 20, BLACK);
         drawArray(arr, n, 100, 150, 120, 100, GREEN);
 
         EndDrawing();
@@ -185,7 +185,7 @@ int valeur;
 
         BeginDrawing();
         ClearBackground(RAYWHITE);
-        DrawText("Tri rapide avec raylib", 10, 10, 20, BLACK);
+        DrawText("Avant l'insertion:", 10, 10, 20, BLACK);
         drawArray(arr, n, 100, 150, 120, 100, RED);
 
         EndDrawing();
@@ -203,10 +203,7 @@ int valeur;
 
         BeginDrawing();
         ClearBackground(RAYWHITE);
-        DrawText("Tri rapide avec raylib", 10, 10, 20, BLACK);
-
-    // Titre
-   DrawText("Apres l'insertion:", 10, 40, 14, BLACK);
+        DrawText("Apres l'insertion:", 10, 10, 20, BLACK);
 
         drawArray(arr, n, 100, 150, 120, 100, GREEN);
 
@@ -227,7 +224,7 @@ int valeur;
 
         BeginDrawing();
         ClearBackground(RAYWHITE);
-        DrawText("Tri rapide avec raylib", 10, 10, 20, BLACK);
+        DrawText("Avant la suppression:", 10, 10, 20, BLACK);
         drawArray(arr, n, 100, 150, 120, 100, RED);
 
         EndDrawing();
@@ -243,10 +240,7 @@ int valeur;
 
         BeginDrawing();
         ClearBackground(RAYWHITE);
-        DrawText("Tri rapide avec raylib", 10, 10, 20, BLACK);
-
-        // titre
-        DrawText("Apres la suppression:", 10, 40, 14, BLACK);
+        DrawText("Apres la suppression:", 10, 10, 20, BLACK);
         drawArray(arr, n, 100, 150, 120, 100, GREEN);
 
         EndDrawing();
