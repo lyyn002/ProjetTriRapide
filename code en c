@@ -86,13 +86,20 @@ void deleteElement(int arr[],int *size,int element){
 void drawArray(int arr[], int size, int x, int y, int width, int height, Color color) {
     int barWidth = width / size;
     int barHeight = height / size;
+    int startX = x + (width - (barWidth * size)) / 2;
 
     for (int i = 0; i < size; i++) {
-        int barX = x + i * barWidth;
+        int barX = startX + i * barWidth;
         int barY = y + height - arr[i] * barHeight;
         int barW = barWidth - 2;
         int barH = arr[i] * barHeight;
         DrawRectangle(barX, barY, barW, barH, color);
+
+       // pour positionner le nombre
+        int textX = barX + barW / 2 - MeasureText(TextFormat("%d", arr[i]), 10) / 2;
+        int textY = barY + barH + 2;
+        // pour afficher le nombre au dessous de la barre au milieu
+        DrawText(TextFormat("%d", arr[i]), textX, textY, 10, BLACK);
     }
 }
 
