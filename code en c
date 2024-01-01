@@ -33,7 +33,7 @@ void tri_rapide (int arr[] , int deb , int fin ){
 
         BeginDrawing();
         ClearBackground(RAYWHITE);
-        DrawText("Tri rapide avec raylib", 10, 10, 20, BLACK);
+        DrawText("Tri rapide:", 10, 10, 20, BLACK);
         drawArray(arr, fin, 100, 150, 120, 100, RED);
 
         EndDrawing();
@@ -134,7 +134,7 @@ const int screenWidth = 800;
 
         BeginDrawing();
         ClearBackground(RAYWHITE);
-        DrawText("Tri rapide avec raylib", 10, 10, 20, BLACK);
+        DrawText("Tri rapide:", 10, 10, 20, BLACK);
         drawArray(arr, n, 100, 150, 120, 100, RED);
 
         EndDrawing();
@@ -151,7 +151,7 @@ const int screenWidth = 800;
 
         BeginDrawing();
         ClearBackground(RAYWHITE);
-        DrawText("Tri rapide:", 10, 10, 20, BLACK);
+        DrawText("Tri rapide effectué:", 10, 10, 20, BLACK);
         drawArray(arr, n, 100, 150, 120, 100, GREEN);
 
         EndDrawing();
