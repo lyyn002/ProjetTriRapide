@@ -205,9 +205,8 @@ int valeur;
         ClearBackground(RAYWHITE);
         DrawText("Tri rapide avec raylib", 10, 10, 20, BLACK);
 
-    // Titre et expliquation
-    DrawText("Insertion d'un élément", 10, 40, 14, BLACK);
-    DrawText("Veuillez saisir l'élément à insérer dans le tableau trié.", 10, 60, 12, BLACK);
+    // Titre
+   DrawText("Apres la suppression:", 10, 40, 14, BLACK);
 
         drawArray(arr, n, 100, 150, 120, 100, GREEN);
 
@@ -246,9 +245,8 @@ int valeur;
         ClearBackground(RAYWHITE);
         DrawText("Tri rapide avec raylib", 10, 10, 20, BLACK);
 
-        // titre et une petite expliquation
-        DrawText("Suppression d'un élément", 10, 40, 14, BLACK);
-        DrawText("Veuillez saisir l'élément à supprimer dans le tableau trié.", 10, 60, 12, BLACK);
+        // titre
+        DrawText("Apres la suppression:", 10, 40, 14, BLACK);
         drawArray(arr, n, 100, 150, 120, 100, GREEN);
 
         EndDrawing();
