@@ -152,7 +152,7 @@ const int screenWidth = 800;
         BeginDrawing();
         ClearBackground(RAYWHITE);
         DrawText("Tri rapide avec raylib", 10, 10, 20, BLACK);
-        drawArray(arr, n, 100, 150, 120, 100, RED);
+        drawArray(arr, n, 100, 150, 120, 100, GREEN);
 
         EndDrawing();
 
@@ -204,7 +204,12 @@ int valeur;
         BeginDrawing();
         ClearBackground(RAYWHITE);
         DrawText("Tri rapide avec raylib", 10, 10, 20, BLACK);
-        drawArray(arr, n, 100, 150, 120, 100, RED);
+
+    // Titre et expliquation
+    DrawText("Insertion d'un élément", 10, 40, 14, BLACK);
+    DrawText("Veuillez saisir l'élément à insérer dans le tableau trié.", 10, 60, 12, BLACK);
+
+        drawArray(arr, n, 100, 150, 120, 100, GREEN);
 
         EndDrawing();
 
@@ -240,7 +245,11 @@ int valeur;
         BeginDrawing();
         ClearBackground(RAYWHITE);
         DrawText("Tri rapide avec raylib", 10, 10, 20, BLACK);
-        drawArray(arr, n, 100, 150, 120, 100, RED);
+
+        // titre et une petite expliquation
+        DrawText("Suppression d'un élément", 10, 40, 14, BLACK);
+        DrawText("Veuillez saisir l'élément à supprimer dans le tableau trié.", 10, 60, 12, BLACK);
+        drawArray(arr, n, 100, 150, 120, 100, GREEN);
 
         EndDrawing();
 
