@@ -84,14 +84,20 @@ void deleteElement(int arr[],int *size,int element){
 }
 //dessin raylib 
 void drawArray(int arr[], int size, int x, int y, int width, int height, Color color) {
+ //calcule des dimensions des barres
     int barWidth = width / size;
     int barHeight = height / size;
+// calcule de la position de depart horizontale 
     int startX = x + (width - (barWidth * size)) / 2;
 
     for (int i = 0; i < size; i++) {
+    //Calcule la position horizontale de chaque barre
         int barX = startX + i * barWidth;
+  // Calcule la position verticale de chaque barre
         int barY = y + height - arr[i] * barHeight;
+// La largeur de chaque barre
         int barW = barWidth - 2;
+// La hauteur de chaque barre
         int barH = arr[i] * barHeight;
         DrawRectangle(barX, barY, barW, barH, color);
 
