@@ -209,10 +209,10 @@ int valeur;
                InitWindow(screenWidth, screenHeight, "Tri rapide avec raylib");
 
     SetTargetFPS(300);
+    frame = 0;
     while (!WindowShouldClose()&&frame < 300) {
 
         BeginDrawing();
-        frame = 0;
         ClearBackground(RAYWHITE);
         DrawText("Apres l'insertion:", 10, 10, 20, BLACK);
 
@@ -248,6 +248,7 @@ int valeur;
               InitWindow(screenWidth, screenHeight, "Tri rapide avec raylib");
 
     SetTargetFPS(300);
+    frame = 0;
     while (!WindowShouldClose()&&frame < 300) {
 
         BeginDrawing();
