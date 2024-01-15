@@ -27,9 +27,9 @@ void tri_rapide (int arr[] , int deb , int fin ){
     const int screenHeight = 450;
     InitWindow(screenWidth, screenHeight, "Tri rapide avec raylib");
 
-    SetTargetFPS(300);
+    SetTargetFPS(60);
     int frame = 0;
-    while (!WindowShouldClose()&&frame < 300) {
+    while (!WindowShouldClose()&&frame < 60) {
 
 
         BeginDrawing();
@@ -136,9 +136,9 @@ const int screenWidth = 800;
     const int screenHeight = 450;
     InitWindow(screenWidth, screenHeight, "Tri rapide avec raylib");
 
-    SetTargetFPS(300);
+    SetTargetFPS(60);
     int frame = 0;
-    while (!WindowShouldClose()&& frame < 300) {
+    while (!WindowShouldClose()&& frame < 60) {
 
         BeginDrawing();
         ClearBackground(RAYWHITE);
@@ -154,7 +154,7 @@ const int screenWidth = 800;
 
  InitWindow(screenWidth, screenHeight, "Tri rapide avec raylib");
 
-    SetTargetFPS(300);
+    SetTargetFPS(60);
     frame = 0;
     while (!WindowShouldClose()) {
 
@@ -189,9 +189,9 @@ int valeur;
                 scanf("%d", &valeur);
                  InitWindow(screenWidth, screenHeight, "Tri rapide avec raylib");
 
-    SetTargetFPS(300);
+    SetTargetFPS(60);
     frame = 0;
-    while (!WindowShouldClose()&&frame < 300) {
+    while (!WindowShouldClose()&&frame < 60) {
 
         BeginDrawing();
         ClearBackground(RAYWHITE);
@@ -208,9 +208,9 @@ int valeur;
 
                InitWindow(screenWidth, screenHeight, "Tri rapide avec raylib");
 
-    SetTargetFPS(300);
+    SetTargetFPS(60);
     frame = 0;
-    while (!WindowShouldClose()&&frame < 300) {
+    while (!WindowShouldClose()&&frame < 60) {
 
         BeginDrawing();
         ClearBackground(RAYWHITE);
@@ -230,9 +230,9 @@ int valeur;
 
                InitWindow(screenWidth, screenHeight, "Tri rapide avec raylib");
 
-    SetTargetFPS(300);
+    SetTargetFPS(60);
     frame = 0;
-    while (!WindowShouldClose()&&frame < 300) {
+    while (!WindowShouldClose()&&frame < 60) {
 
         BeginDrawing();
         ClearBackground(RAYWHITE);
@@ -247,9 +247,9 @@ int valeur;
                 deleteElement(arr,&n,valeur);
               InitWindow(screenWidth, screenHeight, "Tri rapide avec raylib");
 
-    SetTargetFPS(300);
+    SetTargetFPS(60);
     frame = 0;
-    while (!WindowShouldClose()&&frame < 300) {
+    while (!WindowShouldClose()&&frame < 60) {
 
         BeginDrawing();
         ClearBackground(RAYWHITE);
